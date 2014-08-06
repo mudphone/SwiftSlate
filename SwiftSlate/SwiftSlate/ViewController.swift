@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
                             
+    @IBOutlet weak var usernameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        usernameTextField
+            .rac_textSignal()
+            .subscribeNext {
+                println("this: \($0 as String)")
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -36,6 +36,7 @@
 		CF0747E61991C048009A39D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF0747E71991C048009A39D5 /* SwiftSlateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSlateTests.swift; sourceTree = "<group>"; };
 		CF0747F11991CBC1009A39D5 /* libReactiveCocoa-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libReactiveCocoa-iOS.a"; path = "../../ReactiveCocoa/ReactiveCocoaFramework/build/Debug-iphoneos/libReactiveCocoa-iOS.a"; sourceTree = "<group>"; };
+		CF2BEC801991D1DF0006966B /* ReactiveSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactiveSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +84,7 @@
 				CF0747D81991C048009A39D5 /* Main.storyboard */,
 				CF0747DB1991C048009A39D5 /* Images.xcassets */,
 				CF0747D21991C048009A39D5 /* Supporting Files */,
+				CF2BEC801991D1DF0006966B /* ReactiveSwift-Bridging-Header.h */,
 			);
 			path = SwiftSlate;
 			sourceTree = "<group>";
@@ -342,6 +344,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSlate/ReactiveSwift-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -363,6 +366,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSlate/ReactiveSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
