@@ -19,10 +19,8 @@ class ViewController: UIViewController {
         
         usernameTextField
             .rac_textSignal()
-            .subscribeNext { (text: AnyObject!) in
-                if let t = text as? String {
-                    println("text: \(text)")
-                }
+            .subscribeNext {
+                println("text: \($0)")
         }
         
         usernameTextField.rac_textSignal() ~> RAC(statusLabel, "text")
