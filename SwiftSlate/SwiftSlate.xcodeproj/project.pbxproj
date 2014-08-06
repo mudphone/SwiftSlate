@@ -12,6 +12,7 @@
 		CF0747DA1991C048009A39D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0747D81991C048009A39D5 /* Main.storyboard */; };
 		CF0747DC1991C048009A39D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0747DB1991C048009A39D5 /* Images.xcassets */; };
 		CF0747E81991C048009A39D5 /* SwiftSlateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0747E71991C048009A39D5 /* SwiftSlateTests.swift */; };
+		CF0747F21991CBC1009A39D5 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0747F11991CBC1009A39D5 /* libReactiveCocoa-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		CF0747E11991C048009A39D5 /* SwiftSlateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSlateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0747E61991C048009A39D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF0747E71991C048009A39D5 /* SwiftSlateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSlateTests.swift; sourceTree = "<group>"; };
+		CF0747F11991CBC1009A39D5 /* libReactiveCocoa-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libReactiveCocoa-iOS.a"; path = "../../ReactiveCocoa/ReactiveCocoaFramework/build/Debug-iphoneos/libReactiveCocoa-iOS.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0747F21991CBC1009A39D5 /* libReactiveCocoa-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 		CF0747D21991C048009A39D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF0747F11991CBC1009A39D5 /* libReactiveCocoa-iOS.a */,
 				CF0747D31991C048009A39D5 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -325,8 +329,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include",
+				);
 				INFOPLIST_FILE = SwiftSlate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/koba/work/TALKS/RAC/SwiftSlate/ReactiveCocoa/ReactiveCocoaFramework/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -336,8 +350,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include",
+				);
 				INFOPLIST_FILE = SwiftSlate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/koba/work/TALKS/RAC/SwiftSlate/ReactiveCocoa/ReactiveCocoaFramework/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -395,6 +419,7 @@
 				CF0747ED1991C048009A39D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF0747EE1991C048009A39D5 /* Build configuration list for PBXNativeTarget "SwiftSlateTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +428,7 @@
 				CF0747F01991C048009A39D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
