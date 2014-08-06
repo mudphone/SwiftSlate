@@ -11,16 +11,23 @@ import UIKit
 class ViewController: UIViewController {
                             
     @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var statusLabel: UILabel!
+    @IBOutlet weak var observerLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         usernameTextField
             .rac_textSignal()
-            .subscribeNext {
-                println("this: \($0 as String)")
+            .subscribeNext { (text: AnyObject!) in
+                if let t = text as? String {
+                    println("text: \(text)")
+                }
         }
         
+        usernameTextField.rac_textSignal() ~> RAC(statusLabel, "text")
+        
+        RACObserve(self.statusLabel, "text") ~> RAC(observerLabel, "text")
     }
 
     override func didReceiveMemoryWarning() {

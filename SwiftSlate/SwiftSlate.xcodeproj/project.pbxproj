@@ -11,8 +11,9 @@
 		CF0747D71991C048009A39D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0747D61991C048009A39D5 /* ViewController.swift */; };
 		CF0747DA1991C048009A39D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0747D81991C048009A39D5 /* Main.storyboard */; };
 		CF0747DC1991C048009A39D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0747DB1991C048009A39D5 /* Images.xcassets */; };
-		CF0747E81991C048009A39D5 /* SwiftSlateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0747E71991C048009A39D5 /* SwiftSlateTests.swift */; };
 		CF0747F21991CBC1009A39D5 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0747F11991CBC1009A39D5 /* libReactiveCocoa-iOS.a */; };
+		CFDA472C19921B7E00F929B9 /* SwiftSlateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0747E71991C048009A39D5 /* SwiftSlateTests.swift */; };
+		CFF25EC819922B3A00BBDAD7 /* PDCRACExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF25EC719922B3A00BBDAD7 /* PDCRACExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		CF0747E71991C048009A39D5 /* SwiftSlateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSlateTests.swift; sourceTree = "<group>"; };
 		CF0747F11991CBC1009A39D5 /* libReactiveCocoa-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libReactiveCocoa-iOS.a"; path = "../../ReactiveCocoa/ReactiveCocoaFramework/build/Debug-iphoneos/libReactiveCocoa-iOS.a"; sourceTree = "<group>"; };
 		CF2BEC801991D1DF0006966B /* ReactiveSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactiveSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		CFF25EC719922B3A00BBDAD7 /* PDCRACExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDCRACExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				CF0747D41991C048009A39D5 /* AppDelegate.swift */,
 				CF0747D61991C048009A39D5 /* ViewController.swift */,
+				CFF25EC719922B3A00BBDAD7 /* PDCRACExtensions.swift */,
 				CF0747D81991C048009A39D5 /* Main.storyboard */,
 				CF0747DB1991C048009A39D5 /* Images.xcassets */,
 				CF0747D21991C048009A39D5 /* Supporting Files */,
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0747D71991C048009A39D5 /* ViewController.swift in Sources */,
+				CFF25EC819922B3A00BBDAD7 /* PDCRACExtensions.swift in Sources */,
 				CF0747D51991C048009A39D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF0747E81991C048009A39D5 /* SwiftSlateTests.swift in Sources */,
+				CFDA472C19921B7E00F929B9 /* SwiftSlateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
