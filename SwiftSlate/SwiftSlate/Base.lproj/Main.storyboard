@@ -40,22 +40,55 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHa-De-pRn">
+                                <rect key="frame" x="16" y="198" width="568" height="30"/>
+                                <state key="normal" title="Login Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ee6-zT-jX6">
+                                <rect key="frame" x="16" y="236" width="568" height="30"/>
+                                <state key="normal" title="Random">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Er8-BT-4zX">
+                                <rect key="frame" x="16" y="274" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Eni-wH-bLq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="PHa-De-pRn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="8cD-8Q-XAu"/>
                             <constraint firstItem="RBq-ie-RXP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="AN4-ju-q8U"/>
+                            <constraint firstItem="PHa-De-pRn" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Ayy-Q5-bc0"/>
                             <constraint firstItem="fuV-WC-ppD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="C6A-u4-IDN"/>
+                            <constraint firstItem="Er8-BT-4zX" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="GFl-0Q-fod"/>
+                            <constraint firstItem="PHa-De-pRn" firstAttribute="top" secondItem="fuV-WC-ppD" secondAttribute="bottom" constant="40" id="GRr-Bv-pYs"/>
                             <constraint firstItem="fuV-WC-ppD" firstAttribute="top" secondItem="xnW-is-55u" secondAttribute="bottom" constant="31" id="IaM-yJ-ccB"/>
                             <constraint firstItem="xnW-is-55u" firstAttribute="top" secondItem="RBq-ie-RXP" secondAttribute="bottom" constant="27" id="Jdx-bV-C3i"/>
                             <constraint firstItem="xnW-is-55u" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="SOt-WN-sAw"/>
                             <constraint firstItem="RBq-ie-RXP" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Stx-Wu-FIK"/>
+                            <constraint firstItem="Ee6-zT-jX6" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Wgj-Zw-I7D"/>
                             <constraint firstItem="xnW-is-55u" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="d6N-Jk-mqm"/>
+                            <constraint firstItem="Ee6-zT-jX6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="eoQ-Il-ZDs"/>
+                            <constraint firstItem="Er8-BT-4zX" firstAttribute="top" secondItem="Ee6-zT-jX6" secondAttribute="bottom" constant="8" symbolic="YES" id="hDQ-1C-ITw"/>
                             <constraint firstItem="RBq-ie-RXP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="hiJ-Ug-a47"/>
+                            <constraint firstItem="Er8-BT-4zX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="pMS-Nt-gtJ"/>
+                            <constraint firstItem="Ee6-zT-jX6" firstAttribute="top" secondItem="PHa-De-pRn" secondAttribute="bottom" constant="8" symbolic="YES" id="xhX-t4-fG9"/>
                             <constraint firstItem="fuV-WC-ppD" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="xzZ-OQ-9LF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="PHa-De-pRn" id="0Q4-2e-Q1s"/>
                         <outlet property="observerLabel" destination="fuV-WC-ppD" id="ef1-n2-Vht"/>
+                        <outlet property="randomButton" destination="Ee6-zT-jX6" id="fs9-aw-1Yt"/>
+                        <outlet property="randomLabel" destination="Er8-BT-4zX" id="UHA-sl-aby"/>
                         <outlet property="statusLabel" destination="xnW-is-55u" id="8rj-f3-zXO"/>
                         <outlet property="usernameTextField" destination="RBq-ie-RXP" id="PrY-s4-woZ"/>
                     </connections>
