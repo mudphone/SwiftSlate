@@ -3,8 +3,7 @@ I added ReactiveCocoa as a git submodule, to facilitate experimenatation/hacking
 Things I did:
 - Create a new Swift project
 - add gitignore to new Swift project
-- git submodule add https://github.com/yusefnapora/ReactiveCocoa.git ReactiveCocoa
-- cd ReactiveCocoa && git fetch && git checkout swift-compat && cd ..
+- git submodule add https://github.com/ReactiveCocoa/ReactiveCocoa.git ReactiveCocoa
 - git submodule update --init --recursive
 
 See ReactiveCocoa README for these steps:
