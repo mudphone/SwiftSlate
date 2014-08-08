@@ -22,7 +22,8 @@ class ViewModel {
             return RACDisposable()
         })
         
-        self.randomNumberCommand = RACCommand(enabled: nil, signalBlock: { (input: AnyObject!) -> RACSignal! in
+        self.randomNumberCommand = RACCommand(enabled: nil, signalBlock: {
+            (input: AnyObject!) -> RACSignal! in
             return RACSignal.createSignal({ (subscriber: RACSubscriber!) -> RACDisposable! in
                 let r: String = "\(arc4random())"
                 self.randomSubject.sendNext(r)
