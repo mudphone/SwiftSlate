@@ -5,7 +5,7 @@ Things I did:
 - Add gitignore to new Swift project
 - Add Podfile with ReactiveCocoa in it
 - Run `pod install`
-- Add a briding header file (see below)
+- Add a bridging header file (see below)
 
 Bridging Header:
 - Create ReactiveSwift-Bridging-Header.h and add this: `#import <ReactiveCocoa/ReactiveCocoa.h>` (from: [@stigi](https://medium.com/@stigi/swift-cocoapods-da09d8ba6dd2x)'s post)
