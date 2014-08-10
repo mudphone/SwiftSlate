@@ -9,5 +9,5 @@ Things I did:
 
 Bridging Header:
 - Create ReactiveSwift-Bridging-Header.h and add this: `#import <ReactiveCocoa/ReactiveCocoa.h>` (from: [@stigi](https://medium.com/@stigi/swift-cocoapods-da09d8ba6dd2x)'s post)
-- TL;DR - Under the target's "Build Settings > Swift Compiler - Code Generation" section, update the "Objective-C Bridging Header" setting to: <app name>/ReactiveSwift-Bridging-Header.h
+- TL;DR - Under the target's "Build Settings > Swift Compiler - Code Generation" section, update the "Objective-C Bridging Header" setting to: YOUR_APP_NAME/ReactiveSwift-Bridging-Header.h
 
