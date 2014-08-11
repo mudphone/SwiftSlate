@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Pas de Chocolat. All rights reserved.
 //
 /// Extensions for RAC based on:
+/// http://napora.org/a-swift-reaction/
 /// http://www.scottlogic.com/blog/2014/07/24/mvvm-reactivecocoa-swift.html
 
 import Foundation

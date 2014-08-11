@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var observerLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var randomButton: UIButton!
-    @IBOutlet weak var randomLabel: UILabel!
+    @IBOutlet weak var randomEquationLabel: UILabel!
+    @IBOutlet weak var randomResultLabel: UILabel!
     
     var viewModel: ViewModel!
     
@@ -55,9 +56,16 @@ class ViewController: UIViewController {
                 println("Button pressed!")
         }
 
-        // Update random number based on RACCommand
-        viewModel.randomNumber ~> RAC(randomLabel, "text")
+        // Update random number equation based on RACCommand:
+        viewModel.equation ~> RAC(randomEquationLabel, "text")
         randomButton.rac_command = viewModel.randomNumberCommand
+        
+        // update result of equation based on property change:
+        RACObserve(self.viewModel, "randomNum")
+            .map { (x: AnyObject!) -> AnyObject! in
+                return "= \(x)"
+        } ~> RAC(self.randomResultLabel, "text")
+        
     }
 
     override func didReceiveMemoryWarning() {

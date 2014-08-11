@@ -61,7 +61,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWY-xi-36U">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Equation Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWY-xi-36U">
                                 <rect key="frame" x="16" y="200" width="568" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="6D8-S3-up5"/>
@@ -70,15 +70,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Result Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jo-fX-dlR">
+                                <rect key="frame" x="16" y="229" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HRO-va-lku" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="0NV-ov-VJM"/>
+                            <constraint firstItem="1Jo-fX-dlR" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="4VU-xA-aUS"/>
                             <constraint firstItem="GsO-bK-DWv" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="6FB-lx-igD"/>
+                            <constraint firstItem="1Jo-fX-dlR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="8Uw-4E-6vE"/>
                             <constraint firstItem="cD5-zf-Bdx" firstAttribute="leading" secondItem="WWY-xi-36U" secondAttribute="leading" id="BAa-Ks-tli"/>
                             <constraint firstItem="Gfm-8U-NNf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Cnm-Yp-rVY"/>
                             <constraint firstItem="GsO-bK-DWv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="HSW-c4-g09"/>
                             <constraint firstItem="fzY-oV-Gs7" firstAttribute="top" secondItem="GsO-bK-DWv" secondAttribute="bottom" constant="8" symbolic="YES" id="JYr-CV-RKc"/>
+                            <constraint firstItem="1Jo-fX-dlR" firstAttribute="top" secondItem="WWY-xi-36U" secondAttribute="bottom" constant="8" id="PCm-v5-tMA"/>
                             <constraint firstItem="cD5-zf-Bdx" firstAttribute="leading" secondItem="HRO-va-lku" secondAttribute="leading" id="THI-7z-1hp"/>
                             <constraint firstItem="HRO-va-lku" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="VEY-Hr-PJW"/>
                             <constraint firstItem="WWY-xi-36U" firstAttribute="top" secondItem="HRO-va-lku" secondAttribute="bottom" constant="8" symbolic="YES" id="Zn9-On-vet"/>
@@ -107,7 +116,8 @@
                         <outlet property="loginButton" destination="cD5-zf-Bdx" id="dd7-nG-gmg"/>
                         <outlet property="observerLabel" destination="fzY-oV-Gs7" id="bGA-Vd-YEQ"/>
                         <outlet property="randomButton" destination="HRO-va-lku" id="eTP-Nn-smr"/>
-                        <outlet property="randomLabel" destination="WWY-xi-36U" id="GJw-34-odJ"/>
+                        <outlet property="randomEquationLabel" destination="WWY-xi-36U" id="he6-ml-VGc"/>
+                        <outlet property="randomResultLabel" destination="1Jo-fX-dlR" id="qZa-cP-W5s"/>
                         <outlet property="statusLabel" destination="GsO-bK-DWv" id="A9M-kG-ZBw"/>
                         <outlet property="usernameTextField" destination="Gfm-8U-NNf" id="A6n-V6-5eG"/>
                     </connections>
