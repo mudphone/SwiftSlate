@@ -18,10 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var randomEquationLabel: UILabel!
     @IBOutlet weak var randomResultLabel: UILabel!
     
-    var viewModel: ViewModel!
+    var viewModel: ViewModel?
     
     required init(coder aDecoder: NSCoder!) {
-        self.viewModel = ViewModel()
         super.init(coder: aDecoder)
     }
     
@@ -57,8 +56,8 @@ class ViewController: UIViewController {
         }
 
         // Update random number equation based on RACCommand:
-        viewModel.equation ~> RAC(randomEquationLabel, "text")
-        randomButton.rac_command = viewModel.randomNumberCommand
+        viewModel!.equation ~> RAC(randomEquationLabel, "text")
+        randomButton.rac_command = viewModel!.randomNumberCommand
         
         // update result of equation based on property change:
         RACObserve(self.viewModel, "randomNum")
