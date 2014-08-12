@@ -1,5 +1,13 @@
 Simple Swift iOS project with RAC added via CocoaPods. It's not difficult to build this manually. I'm just putting this here to get examples up quickly.
 
+## How to run this
+
+Just clone me, then open the SwiftSlate/SwiftSlate.xcworkspace in Xcode (the latest Xcode 6 beta please).
+
+## Do it yourself
+
+This is what you have to do if you want to build something like this from scratch. I'm just putting this here in case you want to learn how I did this.
+
 Things I did:
 - Create a new Swift project
 - Add gitignore to new Swift project
