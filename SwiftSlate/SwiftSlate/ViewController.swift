@@ -50,8 +50,7 @@ class ViewController: UIViewController {
         
         // Use button press as signal source:
         loginButton.rac_signalForControlEvents(UIControlEvents.TouchUpInside)
-            .subscribeNext {
-                _ in
+            .subscribeNext { _ in
                 println("Button pressed!")
         }
 
@@ -61,9 +60,7 @@ class ViewController: UIViewController {
         
         // update result of equation based on property change:
         RACObserve(self.viewModel, "randomNum")
-            .map { (x: AnyObject!) -> AnyObject! in
-                return "= \(x)"
-        } ~> RAC(self.randomResultLabel, "text")
+            .map { "= \($0)" } ~> RAC(self.randomResultLabel, "text")
         
     }
 
