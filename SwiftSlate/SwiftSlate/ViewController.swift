@@ -38,11 +38,11 @@ class ViewController: UIViewController {
             .rac_textSignal()
             .subscribeNext { (text: AnyObject!) in
                 if let t = text as? String {
-                    println("explicit text: \(text)")
+                    println("explicit text: \(t)")
                 }
         }
         
-        // Bind text file field input to label:
+        // Bind text field to label:
         usernameTextField.rac_textSignal() ~> RAC(statusLabel, "text")
         
         // Observe label, to update another label:
