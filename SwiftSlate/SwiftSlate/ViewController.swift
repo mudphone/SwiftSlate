@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         randomButton.rac_command = viewModel!.randomNumberCommand
         
         // update result of equation based on property change:
-        RACObserve(self.viewModel, "randomNum")
+        RACObserve(viewModel, "randomNum")
             .map { "= \($0)" } ~> RAC(self.randomResultLabel, "text")
         
     }
